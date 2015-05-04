@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.foodiehoodie.android.SelectedRecipe">
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#d23641"
+        android:orientation="vertical"
+        >
+    <TextView
+        android:id="@+id/recipeName"
+        android:layout_width="wrap_content"
+        android:color="#fff"
+        android:text="Recipe Name"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:padding="10dp"
+        />
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/preptime"
+            android:text="Prep Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            />
+
+        <TextView
+            android:id="@+id/cooktime"
+            android:text="Cook Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/yield"
+            android:text="For this many people"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"/>
+        <TextView
+            android:id="@+id/ingredients"
+            android:text="Ingredient List"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"/>
+        <TextView
+            android:id="@+id/steps"
+            android:text="Steps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"/>
+        <TextView
+            android:id="@+id/author"
+            android:text="Author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"/>
+        <TextView
+            android:id="@+id/url"
+            android:text="URL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"/>
+        </LinearLayout>
+</RelativeLayout>

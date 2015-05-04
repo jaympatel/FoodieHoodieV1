@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.foodiehoodie.android.FoodListActivity">
+
+    <TextView android:id="@+id/searchResultMsg" android:text="Found this recipes for you" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#333" android:textSize="@dimen/abc_text_size_headline_material"
+        android:singleLine="true"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/searchResultMsg">
+
+    </ScrollView>
+
+    <ListView
+        android:id="@+id/searchRecipeListView"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="#111"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/scrollView"
+        android:clickable="true" />
+
+</RelativeLayout>

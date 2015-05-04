@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bootstrapui="http://schemas.android.com/apk/com.beardedhen.androidbootstrap"
+    xmlns:fontawesometext="http://schemas.android.com/apk/res-auto"
+    xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.foodiehoodie.android.FillIngredientsActivity">
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sel_ingredients"
+        android:id="@+id/searchRecipe"
+        android:textSize="20sp"
+        bootstrapbutton:bb_size="small"
+        bootstrapbutton:bb_icon_right="fa-chevron-circle-right"
+        bootstrapbutton:bb_type="primary" />
+
+    <EditText android:layout_below="@+id/searchRecipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Ingredient Name"
+        android:ems="10"
+        android:id="@+id/ingredientBox"/>
+    <!--
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SignUp Button"
+            android:id="@+id/button2"
+            android:layout_alignTop="@+id/button"
+            android:layout_alignRight="@+id/textView2"
+            android:layout_alignEnd="@+id/textView2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/ingredientList"
+            android:layout_below="@+id/ingredientBox"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />-->
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ingredientGridView"
+        android:gravity="left"
+        android:padding="2dp"
+        android:verticalSpacing="2dp"
+        android:horizontalSpacing="2dp"
+        android:layout_below="@+id/ingredientBox"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layoutMode="opticalBounds"
+        android:longClickable="false"
+        android:outlineProvider="paddedBounds"
+        android:numColumns="4" />
+
+
+</RelativeLayout>

@@ -1,0 +1,348 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bootstrapui="http://schemas.android.com/apk/com.beardedhen.androidbootstrap"
+    xmlns:fontawesometext="http://schemas.android.com/apk/res-auto"
+    xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.foodiehoodie.android.SignUpActivity"
+    android:background="#eee"
+    android:fillViewport="true"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|top">
+        <!--<TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#d23641"
+            android:>
+                <TableRow>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="40dp"
+                        android:gravity="left"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/signup"
+                        android:textColor="#fff"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="40dp"
+                        android:gravity="right"
+                        android:text="@string/login"
+                        android:textColor="#fff"
+                        android:layout_column="2"
+                        android:layout_gravity="right" />
+
+                    <com.beardedhen.androidbootstrap.FontAwesomeText
+                        android:id="@+id/loginIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:textSize="32sp"
+                        fontawesometext:fa_icon="fa-sign-in"
+                        android:textColor="#fff"
+                        android:layout_marginRight="10dp"
+                        android:layout_column="3"
+                        android:layout_gravity="right"
+                        android:gravity="end" />
+
+                </TableRow>
+            </TableLayout>
+-->
+        <!--<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#d23641"
+            >-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#d23641">
+            <com.beardedhen.androidbootstrap.FontAwesomeText
+                android:id="@+id/appIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="30sp"
+                fontawesometext:fa_icon="fa-user"
+                android:textColor="#fff"
+                android:clickable="false" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:gravity="left"
+            android:text="@string/signup"
+            android:textColor="#fff"
+            android:elegantTextHeight="true"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|right"
+                android:layout_marginRight="10dp">
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login"
+                    android:id="@+id/loginBtn"
+                    bootstrapbutton:bb_icon_right="fa-sign-in"
+                    bootstrapbutton:bb_type="default"
+                    bootstrapbutton:bb_size="small"
+                    bootstrapbutton:bb_roundedCorners="true"/>
+            </LinearLayout>
+
+        </LinearLayout>
+            <!--<LinearLayout
+               android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right|end"
+                android:clickable="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                >
+                <LinearLayout android:orientation="horizontal"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textSize="40dp"
+                    android:gravity="right"
+                    android:text="@string/login"
+                    android:textColor="#fff"
+                    android:layout_centerVertical="true"
+                    android:layout_alignRight="@+id/textView3"
+                    android:layout_alignEnd="@+id/textView3"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginEnd="35dp" />
+
+                <com.beardedhen.androidbootstrap.FontAwesomeText
+                android:id="@+id/loginIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="32sp"
+                fontawesometext:fa_icon="fa-sign-in"
+                android:textColor="#fff"
+                android:layout_marginRight="10dp"
+                android:gravity="right|end" />
+            </LinearLayout>-->
+
+        <!--</RelativeLayout>-->
+<!--        <ImageView
+            android:layout_width="121dp"
+            android:layout_height="121dp"
+            android:id="@+id/imageView2"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo"/>-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/registerText"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="@string/registerText"
+            android:textColor="#333"
+            android:layout_marginTop="@dimen/activity_vertical_margin"/>
+
+        <RelativeLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Facebook"
+            android:id="@+id/facebookSignup"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/googleSignup"
+            android:layout_toStartOf="@+id/googleSignup"
+            bootstrapbutton:bb_icon_left="fa-facebook"
+            bootstrapbutton:bb_type="primary"
+            bootstrapbutton:bb_roundedCorners="true"
+            bootstrapbutton:bb_size="small"
+            android:layout_marginRight="15dp"/>
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Google+"
+            android:id="@+id/googleSignup"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            bootstrapbutton:bb_icon_left="fa-google-plus"
+            bootstrapbutton:bb_type="danger"
+            bootstrapbutton:bb_size="small"
+            bootstrapbutton:bb_roundedCorners="true"/>
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Twitter"
+            android:id="@+id/twitterSignup"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/googleSignup"
+            android:layout_toEndOf="@+id/googleSignup"
+            bootstrapbutton:bb_icon_left="fa-twitter"
+            bootstrapbutton:bb_type="info"
+            bootstrapbutton:bb_roundedCorners="true"
+            bootstrapbutton:bb_size="small"
+            android:layout_marginLeft="15dp"/>
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="@string/socialMediaText1"
+            android:textColor="#333"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#ffff00"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Or Register using Email"
+                android:textColor="#333"
+                android:gravity="center"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+            />
+           <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="100dp"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_horizontal"
+                android:background="#ffff00"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentStart="false" />
+        </RelativeLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.beardedhen.androidbootstrap.BootstrapEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                bootstrapbutton:be_roundedCorners="true"
+                bootstrapbutton:be_state="danger"
+                android:id="@+id/name" />
+
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:id="@+id/emailId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            bootstrapbutton:be_roundedCorners="true"
+            bootstrapbutton:be_state="danger"
+            android:layout_alignTop="@+id/view"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="5dp"
+             />
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            bootstrapbutton:be_roundedCorners="true"
+            bootstrapbutton:be_state="danger"
+            android:layout_alignTop="@+id/view"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="5dp"
+            />
+
+            <com.beardedhen.androidbootstrap.BootstrapButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/signup"
+                android:id="@+id/signupBtn"
+                android:layout_gravity="center_horizontal"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/googleSignup"
+                android:layout_toEndOf="@+id/googleSignup"
+                bootstrapbutton:bb_icon_left="fa-user"
+                bootstrapbutton:bb_type="primary"
+                bootstrapbutton:bb_roundedCorners="true"
+                bootstrapbutton:bb_size="small"
+                android:layout_margin="10dp"/>
+
+        </LinearLayout>
+
+       <!-- <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:padding="10dp"
+            android:gravity="top">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/alreadyLoginText"
+                android:id="@+id/alreadyLoginText"
+                android:textColor="#fff"
+            android:gravity="left"
+                android:layout_alignTop="@+id/loginBtn"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <com.beardedhen.androidbootstrap.BootstrapButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login"
+                android:id="@+id/loginBtn"
+                android:layout_gravity="center_horizontal"
+                bootstrapbutton:bb_icon_right="fa-sign-in"
+                bootstrapbutton:bb_type="danger"
+                bootstrapbutton:bb_roundedCorners="true"
+                bootstrapbutton:bb_size="small"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/alreadyLoginText"
+                android:layout_alignEnd="@+id/alreadyLoginText" />
+
+        </RelativeLayout>-->
+
+    </LinearLayout>
+</ScrollView>
